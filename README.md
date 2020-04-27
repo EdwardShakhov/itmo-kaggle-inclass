@@ -1,7 +1,7 @@
 # itmo-kaggle-inclass
 Competition for course "Event detection"
 
-Init conda environment from .yml file:
+Init conda environment from `.yml` file:
 
 `conda env create -f environment.yml`
 
@@ -9,4 +9,9 @@ You need torchaudio for this project. To download additional dependencies follow
 
 https://github.com/pytorch/audio
 
-This notebook requires NVidia GPU with CUDA kernetls. If do not have one, then this .yml file does not suit you and you have to create environment by yourself. It it easy, just do `conda create -n '<new_env>'` and install all required dependencies with `pip`. You can recognize dependancies looking at `import` block. Also, correct the code in notebook, hiding all `.cuda()` in it.
+This notebook __requires NVidia GPU with CUDA kernetls__. If do not have one, then this `.yml` file does not suit you and you have to create environment by yourself. It it easy, just do:
+- `conda create -n '<new_env>' python=3.7` -- create environment `<new_env>` with `python3.7` onboard
+- `conda activate <new_env>` -- activate environment 
+- `pip install <packege name>` and install all required dependencies with `pip`. 
+
+You can recognize dependencies looking at `import` block. Also, correct the code in notebook, hiding all `.cuda()` in it.
